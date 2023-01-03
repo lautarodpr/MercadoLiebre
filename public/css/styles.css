@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     background-color: #ebebeb;
 }
 
@@ -148,7 +148,7 @@ main section article img {
     position: absolute;
     right: 20px;
     top: -15px;
-    color:#39b54a
+    color: #39b54a
 }
 
 main section h3 {
@@ -159,7 +159,7 @@ header ul {
     margin-bottom: 16px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 695px) {
     main section article .description {
         display: block;
     }
@@ -183,12 +183,6 @@ header ul {
 
     main section .products article {
         width: 48%;
-    }    
-}
-
-@media (min-width: 769px) {
-    main section .products article {
-        width: 23%;
     }
 
     header div.logo {
@@ -223,5 +217,10 @@ header ul {
         justify-content: flex-end;
         padding-right: 64px;
     }
+}
 
+@media (min-width: 769px) {
+    main section .products article {
+        width: 23%;
+    }
 }
