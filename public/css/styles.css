@@ -1,3 +1,4 @@
+/* ///////////////GENERAL///////////////// */
 * {
     margin: 0px;
     padding: 0px;
@@ -16,6 +17,8 @@ h3 {
 p {
     font-size: 12px;
 }
+
+/*/////////////// HEADER GENERAL/////////// */
 
 div.top-header {
     padding: 5%;
@@ -39,6 +42,7 @@ header nav {
 
 header ul {
     display: none;
+    margin-bottom: 16px;
 }
 
 header ul li a {
@@ -86,6 +90,30 @@ div.burger-menu i {
     width: 40px;
 }
 
+/* /////////////MAIN HOME//////////// */
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section h3 {
+    margin: 20px 6px;
+}
+
 article div.main-article {
     position: relative;
     display: flex;
@@ -106,34 +134,20 @@ article div.main-article {
     color: #39b54a;
 }
 
+.description-container {
+    opacity: 0;
+    height: 0;
+}
+
 .description {
     font-size: 16px;
     font-weight: normal;
     color: #666;
-    display: none;
     margin-top: 20px;
 }
 
 h3 {
     color: #666;
-}
-
-section.banner img {
-    width: 100%;
-}
-
-main {
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article {
-    background-color: #fff;
-    margin: 10px 0px;
-}
-
-main section article img {
-    width: 100%;
 }
 
 .truck-icon {
@@ -151,21 +165,16 @@ main section article img {
     color: #39b54a
 }
 
-main section h3 {
-    margin: 20px 0px;
-}
-
-header ul {
-    margin-bottom: 16px;
-}
+/* /////////////FOOTER GENERAL////////////// */
 
 footer {
     text-align: center;
     background-color: #fff;
     margin: 5px;
+    margin-top: 10px;
 }
 
-.footer i {
+.footer-icon i {
     color: #0044aa;
     font-size: 2em;
     margin: 10px;
@@ -173,12 +182,14 @@ footer {
 
 footer h4 {
     font-size: 16px;
-
+    margin: 0px 0px 5px 0px;
 }
 
 footer p {
     font-size: 12px;
-
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
 }
 
 footer article {
@@ -189,18 +200,19 @@ footer article p {
     text-align: center;
 }
 
+/* ////////////////REGISTER////////////// */
+
 #form {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 400px;
+    width: 350px;
     background-color: #eac926;
     padding: 30px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 35px;
     margin-bottom: 70px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 27px 2px #000;
+    border-radius: 10px;
 }
 .controls {
     width: 100%;
@@ -239,7 +251,7 @@ div.items {
     width: 100%;
 }
 
-h4 {
+form h4 {
     margin: 20px 0px 5px 0px;
 }
 
@@ -247,7 +259,40 @@ div.password {
     margin-top: 20px;
 }
 
-@media (min-width: 695px) {
+/* ////////////LOGIN//////////// */
+
+.form-login{
+    text-align: center; 
+    padding: 20px; 
+}
+.form-login div{
+    padding: 20px;
+}
+.styles-login{
+    padding: 12px;
+    width: 50%;
+    border: 0px;
+    border-radius: 5px;
+}
+.login-button{
+    width: 50%;
+    padding: 12px;
+    border: 0px;
+    background-color: #0044aa;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+.login-button:hover{
+    background-color: #0022AA;
+}
+
+/* /////////////////MEDIA QUERIES/////////// */
+
+@media (min-width: 700px) {
+
+    /* ////////////MAIN//////////// */
+
     main section article .description {
         display: block;
     }
@@ -272,6 +317,8 @@ div.password {
     main section .products article {
         width: 48%;
     }
+
+    /* //////////HEADER/////////// */
 
     header div.logo {
         width: 30%;
@@ -306,10 +353,20 @@ div.password {
         padding-right: 64px;
     }
 
+}
+
+@media (min-width: 769px) {
+    main section .products article {
+        width: 23%;
+    }
+
+    /* /////////FOOTER//////////// */
+
     footer section  {
         display: flex;
         flex-wrap: wrap;
     }
+
     footer section article {
         width: 33%;
     }
@@ -318,11 +375,5 @@ div.password {
     }
     footer section article i:hover{
         color: #000;
-    }
-}
-
-@media (min-width: 769px) {
-    main section .products article {
-        width: 23%;
     }
 }
