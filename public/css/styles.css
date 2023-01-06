@@ -222,7 +222,7 @@ footer article p {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 350px;
+    width: 400px;
     background-color: #eac926;
     padding: 30px;
     margin: auto;
